@@ -1,0 +1,72 @@
+.intro {
+    text-align: center;
+    margin: 0 auto 2rem auto;
+    max-width: 700px;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f9fa;
+    margin: 0;
+    color: #222;
+}
+/* Intro paragraph styling */
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.intro p {
+    font-size: 1.15rem;
+    color: #eeeeee;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+header {
+    background: #2d3e50;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.project {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+.project:hover {
+    box-shadow: 0 4px 24px rgba(44,62,80,0.12);
+}
+.project h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: #2d3e50;
+}
+.media {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.media img, .media video {
+    max-width: 320px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+@media (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}

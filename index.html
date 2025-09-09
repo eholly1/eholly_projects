@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Holly's Personal Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ethan Holly's Personal Projects</h1>
+        <br>
+        <div class="intro">
+            <p>This is an overview of my recent personal projects, including demo videos, technical details, and links to source code github. Enjoy browsing!</p>
+        </div>
+    </header>
+    <main>
+            <section class="project">
+                    <h2>Claude-Powered Music Tutor</h2>
+                    <a href="https://github.com/eholly1/music_tutor" target="_blank">GitHub Repo</a>
+                    <div class="media">
+                            <iframe width="320" height="180" src="https://www.youtube.com/embed/BC5z6pjK-aI" title="Music Trainer Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="project-desc">
+                        In this project, I developed a prototype Claude-powered music tutor that interactively trains a student to play an instrument, through a call-and-response method. The teacher plays a phrase, conditioned on an initial complexity setting, and then the student tries to play it back. The LLM is then asked to compare the notes the student responded with, evaluates the student in terms of pitch, rhythmic, and expressive accuracy, and then decides what to play the next time around.
+                    </p>
+            </section>
+        <section class="project">
+                    <h2>2D Fighting Game AI Project</h2>
+                    <a href="https://github.com/eholly1/fighting_game_ai" target="_blank">GitHub Repo</a>
+                    <div class="media">
+                        <iframe width="320" height="180" src="https://www.youtube.com/embed/sl2ClsJ8tIQ" title="2D Fighting Game AI Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="project-desc">
+                        In this project, I wrote a 2D fighting game in Python using Pygame, and implemented an AI opponent using a neural network trained with reinforcement learning (PPO), pretrained from BC on human demonstrations and PPO trained with self-play.
+                        However, the RL agent was too aggressive and not fun to play against, so I switched to an evolutionary strategy, over hardcoded agents that were authored and mutated by successive calls to Claude. After training, I chose an Aggressive and Defensive agent from the elites,
+                        and adapted them to Easy, Medium, and Hard difficulties by prompting Claude to modify their behavior. The final result is a fun-to-play-against AI that can be adapted to different skill levels.
+                    </p>
+        </section>
+        <section class="project">
+            <h2>Topdown Shooter AI Project</h2>
+            <div class="media">
+                <img src="topdown_shooter_demo.jpg" alt="Topdown Shooter AI Demo">
+            </div>
+        </section>
+        <section class="project">
+                <h2>LLM Trading Project</h2>
+                <div class="media">
+                    <!-- Replace src with your video or image file -->
+                    <img src="llm_trading_demo.jpg" alt="LLM Trading Demo">
+                </div>
+            </section>
+    </main>
+</body>
+</html>
