@@ -42,7 +42,14 @@
             <h2>Topdown Shooter AI Project</h2>
             <div class="media">
                 <img src="topdown_shooter_demo.jpg" alt="Topdown Shooter AI Demo">
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/gsT9o0GNaM4" title="2D Fighting Game AI Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            <p class="project-desc">
+                In this project, I wrote a simple topdown shooter game in Python using Pygame, and implemented an AI bot using a neural network trained with reinforcement learning (PPO).
+                Unlike the fighting game, this game require significantly more long-term cohesive action, as the game involves positioning and approaching or retreating from enemies.
+                To get training to be stable and fast, I had to tune the reward function, carefully design the training setup, and design an observation and action space that was expressive yet simple.
+                For example, I represented the observations space around the agent with metadata about which directions of radial movement would move toward and away from enemies, as computed by A*.
+            </p>
         </section>
         <section class="project">
                 <h2>LLM Trading Project</h2>
